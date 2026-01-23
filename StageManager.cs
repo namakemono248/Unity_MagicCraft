@@ -1,31 +1,27 @@
-using UnityEngine;
+using System;
 
-public class StageManager : MonoBehaviour
+public static class StageManager
 {
     public static StageBounds Current { get; private set; }
+    static StageBounds previous;
 
-    StageBounds[] stages;
-    PlayerMove player;
+    public static event Action<StageBounds> OnStageChanged;
 
-    void Awake()
+    public static void ForceSetStage(StageBounds next)
     {
-        stages = Object.FindObjectsByType<StageBounds>(FindObjectsSortMode.None);
-        player = Object.FindFirstObjectByType<PlayerMove>();
-    }
+        if (next == null) return;
+        if (Current == next) return;
 
-    void Update()
-    {
-        if (player == null) return;
+        // ★ 前ステージを無効化
+        if (Current != null)
+            Current.gameObject.SetActive(false);
 
-        Vector2 pos = player.transform.position;
+        previous = Current;
+        Current = next;
 
-        foreach (var stage in stages)
-        {
-            if (stage.Contains(pos))
-            {
-                Current = stage;
-                return;
-            }
-        }
+        // ★ 次ステージを有効化
+        Current.gameObject.SetActive(true);
+
+        OnStageChanged?.Invoke(Current);
     }
 }
