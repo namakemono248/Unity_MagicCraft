@@ -1,31 +1,31 @@
 # Unity_MagicCraft
-## CameraFollow.cs
-カメラ移動
+## コード説明
+**CameraFollow.cs**
 
-## GameStateTest.cs
+**GameStateTest.cs**
 
-## MagicCaster.cs
+**MagicCaster.cs**
 
-## PlayerMove.cs
+**PlayerMove.cs**
 
-## Rune.cs
+**Rune.cs**
 
-## RuneGrammar.cs
+**RuneGrammar.cs**
 
-## RuneTestSelector.cs
+**RuneTestSelector.cs**
 
-## StageAutoDetector.cs
+**StageAutoDetector.cs**
 
-## StageBounds.cs
+**StageBounds.cs**
 
-## StageManager.cs
+**StageManager.cs**
 
-## WarpHomeController.cs
+**WarpHomeController.cs**
 
-## WarpTrigger.cs
+**WarpTrigger.cs**
 
-## 魔法処理.CS
+**魔法処理.CS**
 
-## 魔法数字キー処理.cS
+**魔法数字キー処理.cS**
 
-## 魔法文法初期.CS
+**魔法文法初期.CS**
