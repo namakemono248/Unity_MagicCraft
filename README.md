@@ -1,5 +1,6 @@
 # Unity_MagicCraft
 ## CameraFollow.cs
+カメラ移動
 
 ## GameStateTest.cs
 
@@ -28,5 +29,3 @@
 ## 魔法数字キー処理.cS
 
 ## 魔法文法初期.CS
-
-//あいうえお
