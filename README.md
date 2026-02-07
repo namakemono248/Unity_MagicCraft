@@ -1,6 +1,6 @@
 # Unity_MagicCraft
 ## コード説明
-**CameraFollow.cs**
+**CameraFollow.cs**\n
 　カメラ移動
 **GameStateTest.cs**
 
